@@ -1,0 +1,59 @@
+.profile{
+    display: flexbox;
+    width: 80vw;
+    height: 65vh;
+    margin: auto;
+}
+.insnavbar{
+    width: 100%;
+    height: 10%;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+}
+.img34{
+    width: 24%;
+    border-radius:50%;
+    padding-bottom: 24%;
+    background-color: thistle;
+    background-image: url("../images/loginicon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.upload{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnupload{
+    width: 20%;
+    height: 15%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+}
+@media only screen and (max-width: 1000px){
+    .img{
+        width: 40%;
+        border-radius:50%;
+        padding-bottom: 40%;
+    }
+}
+@media only screen and (max-width: 600px){
+        .btnupload{
+            font-size: 0.8em;
+        }
+}
+@media only screen and (max-width: 300px){
+    .btnupload{
+        font-size: 0.5em;
+    }
+
+}
