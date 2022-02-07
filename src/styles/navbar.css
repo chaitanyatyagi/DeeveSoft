@@ -8,7 +8,7 @@
     /* border: 2px solid black; */
     margin: 3px auto;
 }
-.eachcomponent{
+.eachcomponent3{
     border-radius: 3px;
     width: 25%;
     height: 100%;
@@ -19,6 +19,30 @@
     border: 0.1px solid black;
     font-size: 2em;
 }
+.eachcomponent4{
+    border-radius: 3px;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    border: 0.1px solid black;
+    font-size: 2em;
+}
+
+.eachcomponent2{
+    border-radius: 3px;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    border: 0.1px solid black;
+    font-size: 2em;
+    
+  }
 .eachcomponent1{
     border-radius: 3px;
     width: 25%;
@@ -29,12 +53,19 @@
     font-weight: bolder;
     border: 0.1px solid black;
     font-size: 1em;
+    
 }
 link{
     text-decoration: none;
 }
 @media only screen and (max-width: 1024px){
-    .eachcomponent{
+    .eachcomponent2{
+        font-size: 1.5em;
+    }
+    .eachcomponent3{
+        font-size: 1.5em;
+    }
+    .eachcomponent4{
         font-size: 1.5em;
     }
     .eachcomponent1{
@@ -42,7 +73,13 @@ link{
     }
 }
 @media only screen and (max-width: 800px){
-    .eachcomponent{
+    .eachcomponent2{
+        font-size: 1.1em;
+    }
+    .eachcomponent3{
+        font-size: 1.1em;
+    }
+    .eachcomponent4{
         font-size: 1.1em;
     }
     .eachcomponent1{
@@ -50,7 +87,13 @@ link{
     }
 }
 @media only screen and (max-width: 500px){
-    .eachcomponent{
+    .eachcomponent2{
+        font-size: 0.8em;
+    }
+    .eachcomponent3{
+        font-size: 0.8em;
+    }
+    .eachcomponent4{
         font-size: 0.8em;
     }
     .eachcomponent1{

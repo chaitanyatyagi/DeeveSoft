@@ -3,6 +3,7 @@ import "../styles/goal.css"
 import { useEffect, useState} from "react"
 import { db } from "../firebase"
 
+
 function Goal() {
     const user = localStorage.getItem('Email')
     const [value, setValue] = useState("")
@@ -16,12 +17,6 @@ function Goal() {
         d4: "Improve cardio or speed",
         d5: "Improve sports performance"
     }
-    // const AddToList = () => {
-    //         setGoal([...goal, {
-    //             'goal': value
-    //         }]),5000
-    //     console.log(value,goal)
-    // }
     useEffect (() => {
         if(value!=""){
             setGoal([...goal, {
@@ -40,7 +35,7 @@ function Goal() {
     }
     return (
         <div className="goal">
-            <NavBar className="insnavbar" />
+            <NavBar className="insnavbar"/>
             <div className="body">
                 <div className="left">
                     <h1>GOAL</h1>

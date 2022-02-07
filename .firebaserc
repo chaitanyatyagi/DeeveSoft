@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "deevesoft-27bfd"
+  },
+  "targets": {
+    "deevesoft-27bfd": {
+      "hosting": {
+        "target": [
+          "deevesoft-72a84"
+        ]
+      }
+    }
   }
 }

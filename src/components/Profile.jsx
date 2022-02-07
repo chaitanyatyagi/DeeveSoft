@@ -16,9 +16,6 @@ function Profile() {
                 }
 
             },
-            () => {
-
-            }
             
         );
 
@@ -28,7 +25,6 @@ function Profile() {
             <NavBar className="insnavbar" />
             <div className="image">
                 <div className="img34" id='chng'></div>
-                {/* <image className="img34" src="../images/loginicon.png"></image>  */}
             </div>
             <div className="upload">
                 <input type="file" accept="image/*" onChange={(event) => UploadImage(event)} className='btnupload' />
