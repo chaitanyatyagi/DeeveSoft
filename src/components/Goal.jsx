@@ -1,6 +1,6 @@
 import NavBar from "./NavBar";
 import "../styles/goal.css"
-import { useState} from "react"
+import { useEffect, useState} from "react"
 import { db } from "../firebase"
 
 function Goal() {
@@ -16,12 +16,19 @@ function Goal() {
         d4: "Improve cardio or speed",
         d5: "Improve sports performance"
     }
-    const AddToList = () => {
-        setGoal([...goal, {
-            'goal': value
-        }])
-        console.log("yes")
-    }
+    // const AddToList = () => {
+    //         setGoal([...goal, {
+    //             'goal': value
+    //         }]),5000
+    //     console.log(value,goal)
+    // }
+    useEffect (() => {
+        if(value!=""){
+            setGoal([...goal, {
+                'goal': value
+                }])
+        }
+    },[value])
 
 
     const TargetToFirebase = () => {
@@ -43,41 +50,30 @@ function Goal() {
                     <div className="rightup">
                         <label class="container">
                             <input type="checkbox"/>
-                            <span class="checkmark"     onClick={() => {
-                                setValue(goals.d1)
-                            AddToList()
+                            <span class="checkmark"  onClick={() => {
+                            setValue(goals.d1)
                         }}>{goals.d1}</span>
                         </label>
 
-                        <label class="container">
+                        <label class="container" >
                             <input type="checkbox"/>
-                            <span class="checkmark"   onClick={() => {
-                                setValue(goals.d2)
-                                AddToList()
-                            }}>{goals.d2}</span>
+                            <span class="checkmark" onClick={() =>  setValue(goals.d2)}>{goals.d2}</span>
                         </label>
 
-                        <label class="container" >
+                        <label class="container"  >
                             <input type="checkbox"  />
-                            <span class="checkmark" onClick={() => {
-                            setValue(goals.d3)
-                            AddToList()
-                        }}>{goals.d3}</span>
+                            <span class="checkmark" onClick={() =>  setValue(goals.d3)}>{goals.d3}</span>
                         </label>
 
-                        <label class="container" >
+                        <label class="container"  >
                             <input type="checkbox"  />
-                            <span class="checkmark" onClick={() => {
-                            setValue(goals.d4)
-                            AddToList()
-                        }}>{goals.d4}</span>
+                            <span class="checkmark" onClick={() =>  setValue(goals.d4)}>{goals.d4}</span>
                         </label>
-                        <label class="container" onClick={() => {
-                                setValue(goals.d5)
-                            AddToList()
-                        }}>
+                        <label class="container" >
                             <input type="checkbox" />
-                            <span class="checkmark">{goals.d5}</span>
+                            <span class="checkmark" onClick={() => {
+                                setValue(goals.d5)
+                        }}>{goals.d5}</span>
                         </label>
                     </div>
                     <div className="rightdown">
