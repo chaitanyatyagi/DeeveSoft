@@ -10,5 +10,5 @@ const auth = app.auth()
 const db = app.firestore()
 const store = app.storage()
 
-export {auth,db,store}
-export default app;
+export {auth,db,store,app as default}
+
